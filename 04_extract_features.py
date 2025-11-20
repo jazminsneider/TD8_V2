@@ -115,11 +115,11 @@ def compute_tracks(filename, gender, extraction_config, temp_folder):
     jitter = ml.parsing.arff.get_column(data, "jitterLocal")
     shimmer = ml.parsing.arff.get_column(data, "shimmerLocal")
     logHNR = ml.parsing.arff.get_column(data, "logHNR")
-    intensity[~(intensity > 0)] = np.nan
-    jitter[~(pitch > 0)] = np.nan
-    shimmer[~(pitch > 0)] = np.nan
-    logHNR[~(pitch > 0)] = np.nan
-    pitch[~(pitch > 0)] = np.nan
+    #intensity[~(intensity > 0)] = np.nan
+    #jitter[~(pitch > 0)] = np.nan
+    #shimmer[~(pitch > 0)] = np.nan
+    #logHNR[~(pitch > 0)] = np.nan
+    #pitch[~(pitch > 0)] = np.nan
     series["pitch"] = pitch
     series["intensity"] = intensity
     # series["loudness"] = loudness
